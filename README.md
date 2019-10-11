@@ -47,3 +47,40 @@ fs.loadDrive("Databank")
 identifier = fs.DriveInfo["identifier"] --prints the identification
 
 Info: Once a drive is loaded it will store its table in fs.DriveTable and its info in fs.DriveInfo
+
+# fs.scanBanks()
+scans for banks and stores them in fs.Drives
+
+# fs.list(path)
+lists a path and its containing files
+
+# fs.remove(path)
+self explanatory
+
+# fs.mkdir(path)
+Makes a directory.
+Does not make directories on the way to end point, you will have to make each directory manually
+
+# fs.isDir(path)
+Checks if path is a directory
+
+# fs.isFile(path)
+Checks if path is a file
+
+# fs.open(path)
+Returns a file functions folder. See below
+
+# File: 
+
+# file.readAll()
+Returns the file completely
+
+# file.write(text)
+Overwrites the file to text. Does not save, needs flush() to save
+
+# file.append(text)
+Adds text to file.
+DOES NOT SKIP A LINE, DO IT YOURSELF LAZY
+
+# file.flush()
+Saves file!
